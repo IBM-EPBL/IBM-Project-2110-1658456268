@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('static/images/fpbg1.jpeg');
+  background-color: #A594F9;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -154,26 +154,14 @@ formgroup input:focus ~ span {
   font-weight: bold;
   cursor: pointer;
 }
-.social #facebook {
-  background: #1F4788;
-  background: -webkit-gradient(linear, left top, right top, from(#4B77BE), to(#1F4788));
-  background: linear-gradient(to right, #4B77BE, #1F4788);
-  background-size: 100%;
-}
-.social #google {
-  background: #FEFEFE;
-  background: -webkit-gradient(linear, left top, right top, from(#FEFEFE), to(#f1f1f1));
-  background: linear-gradient(to right, #FEFEFE, #f1f1f1);
-  background-size: 100%;
-  color: #F71442;
-}
+
 
 p {
-  color: white;
+  color: black;
   text-align: center;
 }
 p a {
-  color: inherit;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
 }
@@ -200,10 +188,12 @@ p a {
 </head>
 <body>
   
+  <div id="png"><a href="/" title="HOME"><img style="width:75px; height:75px ; " src="..\static\images\home-page.png"></a></div>
   <div class="container-center">
-
+   
   <center><h1>Change Your Password</h1></center>
   <form action='/forgotpw' method="POST">
+   
     <h4>Enter your email and new password
     </h4>
     <br>
@@ -220,12 +210,14 @@ p a {
     
      <br>
       <input type="submit" id="login-btn" value="Reset">
-  
+     
       
     
   </form>
+  <p>Did you remember? <a href="/signin">Login</a></p>
+  
    
-  <p>Did you remember? <a href="">Login</a></p>
+
 </div>
 </body>
 </html>

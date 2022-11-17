@@ -70,7 +70,7 @@ def register():
             return render_template('login.html', msg = msg)
     else:
         msg = 'PLEASE FILL OUT OF THE FORM'
-        return render_template('register.html', msg=msg)
+        return render_template('signup.html', msg=msg)
         
 #CHANGE FORGOT PASSWORD
 
